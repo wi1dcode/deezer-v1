@@ -43,13 +43,9 @@ header .btn {
     margin-right: -20px;
 }
 
-/* bug ici margin left*/
 header .btn:hover {
     color: white;
     background-color: #2d96c8;
-    /* padding: 10px 20px 10px 20px; */
-    /* font-size: 15px;
-    margin-left: -10px; */
     transition: .3s;
 }
 
@@ -126,47 +122,346 @@ h3 {
 /* second section */
 
 .phone {
-    background-color: #f9f9f9;
-}
-
-.container {
-    height: 550px;
     width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    background-color:  #f9f9f9;
+    padding: 50px 0 50px 0;
 }
 
-.container article {
+
+.phone_text h3 {
+    font-size: 27px;
+}
+
+.phone_text p {
+    font-size: 18px;
+}
+
+
+.container {        
     display: flex;
-    flex-direction: row;
+    max-width: 1170px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.container h2 {
+    position: absolute;
+    margin-left: -290px;
+}
+
+.phone_text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    line-height: 24px;
+}
+
+.phone_text article {
+    padding: 10px;
+    margin: 20px 20px;
+    width: 40%;
 }
 
 /* icons section */
 
 .icons {
     background-color: #ef5466;
-
+    display: flex;
+    justify-content: space-around;
 }
 
-.icons .container {
+.icons .container_ic {
     height: 150px;
     width: 100%;
     max-width: 1170px;
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
     align-items: center;
-    
 }
 
-.container .text {
+.container_ic .text {
     width: 39%;
     flex-direction: column;
     color: white;
+    padding-left: 50px;
+}
+
+.icons_inner img {
+    margin-right: 40px;
+    filter: invert(1);
+}
+
+
+/* tarif */
+
+.tarif_desc {
+    display: flex;
+    justify-content: center
+}
+
+.gratuit {
+    width: 250px;
+    height: 550px;
+    border-right: 5px solid #ececec;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.tarif_premium {
+    width: 250px;
+    height: 550px;
+    background-color: #2d96c8;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: white;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
+}
+
+.famille {
+    width: 250px;
+    height: 550px;
+    display: flex;
+    border-left: 5px solid #ececec;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.tarif {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+.tarif_desc ul {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.greycontent {
+    color: #8e8e94;
+}
+
+.whitecontent {
+    color: white;
+}
+
+.tarif_no {
+    opacity: 0.5;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+
+.gratuit_price {
+    text-align: center;
+    font-size: 30px;
+}
+
+.gratuit_month {
+    text-align: center;
+}
+
+.gratuit_title  {
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.gratuit_margin {
+    margin-bottom: 40px;
+}
+
+.tarif_title {
+    padding-top: 70px;
+    text-align: center;
+}
+
+.tarif_title h3 {
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+.tarif_title p {
+    text-transform: uppercase;
+    color: #8e8e94;
+    padding-bottom: 10px;
+} 
+
+.tarif_info {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    color: #8e8e94;
+    margin-bottom: 30px;
+}
+
+.tarif_desc img {
+    padding-right: 10px;
+}
+
+.offert {
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bold;
+    color: #2d96c8;
+}
+
+.offert_white {
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.plusinfo {
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: bold;
+    color: #2d96c8;
+} 
+
+.plusinfo:hover {
+    color: #017ab3;
+}
+
+.plusinfo_white:hover {
+    color: rgb(247, 241, 241);
+}
+
+.plusinfo_white {
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: bold;
+    color: white;
+} 
+
+.signup {
+    margin: 20px 10px;
+    border-style: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-weight: bold;
+    background-color: #ef5466;
+    color: white;
+
+}
+
+.signup:hover {
+    background-color: #f52941;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* more info */
+
+.more_info div {
+    background-color: #ececec;
+    height: 130px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 330px 0 330px;
+}
+
+.more_info h3 {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.discount {
+    color: #ef5466;
+}
+
+.more_info a {
+    text-decoration: none;
+    color: #017ab3;
+    font-weight: bold;
+}
+
+.more_info p {
+    padding-bottom: 7px;
+} 
+
+.more_btn {
+    margin: 20px 10px;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.more_btn:hover {
+    background-color: #ef5466;
+    border-style: none;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    height: 550px;
+    background-color: black;
+    color: white;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.download img {
+    padding-right: 10px;
+}
+
+.footer_links {
+    display: flex;
+    padding: 0px 100px 20px 100px;
+    justify-content: space-between;
+}
+
+.footer_links a {
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+}
+
+.footer_links .links_title {
+    color: #8e8e94;
+    font-weight: bold;
+}
+
+
+.social {
+    padding: 20px 100px 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social_links img {
+    padding-right: 20px;
+}
+
+select {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    margin-left: 5px;
+    outline: none;
 }
